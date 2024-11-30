@@ -62,7 +62,7 @@ body {
 #main-component {
   background-color: var(--white);
   display: flex;
-  gap: 38px;
+  /* gap: 38px; */
   border-radius: 12px;
 }
 
@@ -255,4 +255,29 @@ label.radio-option:has(input[type="radio"]:checked) {
 
 #calculate:hover {
   background-color: var(--lime-hover);
+}
+
+.results {
+  background-color: var(--slate-900);
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.empty {
+  text-align: center;
+  color: var(--white);
+}
+
+.empty h3 {
+  margin: 16px 0;
+}
+
+.empty p {
+  color: var(--slate-300);
+  max-width: 414px;
 }
