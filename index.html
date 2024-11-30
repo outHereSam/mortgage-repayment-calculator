@@ -36,7 +36,7 @@
           <button class="clear-form">Clear All</button>
         </div>
 
-        <form action="#">
+        <form id="mortgageForm">
           <div class="amount">
             <label for="amount">Mortgage Amount</label>
             <div class="amount-input">
@@ -57,7 +57,7 @@
             <div class="rate">
               <label for="rate">Interest Rate</label>
               <div class="rate-input">
-                <input type="number" name="rate" id="rate" />
+                <input type="number" name="rate" id="rate" step=".01" />
                 <span class="label">%</span>
               </div>
             </div>
@@ -102,6 +102,26 @@
             Complete the form and click "calculate repayments" to see what your
             monthly repayments would be.
           </p>
+        </div>
+
+        <div class="result-component">
+          <h1>Your results</h1>
+          <p class="kicker">
+            Your results are shown below based on the information you provided.
+            To adjust the results, edit the form and click "calculate
+            repayments" again.
+          </p>
+
+          <div class="result-card">
+            <div class="result-card-bg"></div>
+            <div class="result-card-content">
+              <p>Your monthly repayments</p>
+              <h1 class="result">£1,797.74</h1>
+              <span class="line"></span>
+              <p>Total you'll repay over the term</p>
+              <h3 class="repayment">£539, 322.94</h3>
+            </div>
+          </div>
         </div>
       </div>
     </div>
