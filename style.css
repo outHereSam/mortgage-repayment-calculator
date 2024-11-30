@@ -275,7 +275,7 @@ label.radio-option:has(input[type="radio"]:checked) {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  display: none;
+  /* display: none; */
 }
 
 .empty h3 {
@@ -290,6 +290,7 @@ label.radio-option:has(input[type="radio"]:checked) {
 .result-component {
   /* border: solid 1px pink; */
   position: relative;
+  display: none;
 }
 
 .result-component h1 {
